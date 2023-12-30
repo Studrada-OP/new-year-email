@@ -79,16 +79,16 @@ const HelloEmail = () => {
                 <Section>
                   <Img
                     className="flex justify-center w-full"
-                    src="https://github.com/Studrada-OP/new-year-email/blob/main/static/rare-2.png?raw=true"
+                    src="https://github.com/Studrada-OP/new-year-email/blob/main/static/legendary-1.gif?raw=true"
                   />
                 </Section>
 
                 <Text style={reasonText}>
                   😉 Тобі випала листівка рівню{" "}
                   <span className="bg-red-500 px-1">legendary</span>! Таку
-                  листівку окрім тебе отримало
-                  <span className="bg-red-300 px-1">ще 59 студентів</span>{" "}
-                  студентів! Можеш похизуватися цим у коментарях{" "}
+                  листівку окрім тебе отримало{" "}
+                  <span className="bg-red-500 px-1">ще 59 студентів</span>!
+                  Можеш похизуватися цим у коментарях{" "}
                   <Link
                     className="text-[#C09DED] underline"
                     href="https://t.me/students_op/275"
