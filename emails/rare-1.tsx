@@ -88,7 +88,7 @@ const HelloEmail = () => {
                   поділитися нею у коментарях{" "}
                   <Link
                     className="text-[#C09DED] underline"
-                    href="https://t.me/students_op/275"
+                    href="https://t.me/students_op/280"
                   >
                     під нашим постом в телеграм-каналі
                   </Link>
