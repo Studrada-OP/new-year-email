@@ -36,13 +36,13 @@ const HelloEmail = () => {
       </Head>
 
       <Tailwind>
-        <Preview>Вітаємо, студенти!</Preview>
+        <Preview>З Новим роком, студенте!</Preview>
 
         <Body className="text-[#EFEFEF] bg-white">
           <Container className="max-w-[600px] bg-[#070707] pt-10 px-3 pb-0">
             <Section>
               <Section>
-                <Section className="flex justify-center min-w-min">
+                <Section className="flex justify-center min-w-min" style={logoContainer}>
                   <Img
                     src="https://github.com/sspaceless/studrada-email/blob/main/static/studrada-logo.png?raw=true"
                     alt="Лого студради НУ'ОП'"
@@ -67,17 +67,24 @@ const HelloEmail = () => {
                 <Text className="text-[#EFEFEF] text-[15px]">
                   <Text className="float-left">
                     На честь свята, ми хочемо подарувати тобі{" "}
-                    <span className="bg-[#E3FF2E] text-black px-1">
+                    <span className="bg-[#C09DED] text-black px-1">
                       гарненьку листівку від Студради!
                     </span>
                   </Text>
                 </Text>
 
+                <Section>
+                  <Img
+                    className="flex justify-center w-full"
+                    src="https://github.com/Studrada-OP/new-year-email/blob/main/static/rare-1.png?raw=true"
+                  />
+                </Section>
+
                 <Text style={reasonText}>
                   😉 Тобі випала листівка рівню{" "}
-                  <span className="bg-blue-600 px-1">common</span>! Подібну
-                  листівку отримало ще{" "}
-                  <span className="bg-blue-600 px-1">79%</span> студентів. Можеш
+                  <span className="bg-yellow-300 text-black px-1">rare</span>! Одну з трьох таких
+                  листівок отримало ще{" "}
+                  <span className="bg-yellow-300 text-black px-1">20%</span> студентів. Можеш
                   поділитися нею у коментарях{" "}
                   <Link
                     className="text-[#C09DED] underline"
@@ -96,7 +103,7 @@ const HelloEmail = () => {
                   </Section>
 
                   <Section>
-                    <Text className='text-center text-[18px] mb-3 italic'>
+                    <Text className="text-center text-[18px] mb-3 italic">
                       Ваша новорічна,
                     </Text>
                   </Section>
@@ -118,66 +125,8 @@ const HelloEmail = () => {
   );
 };
 
-const body = {
-  color: "#EFEFEF",
-  backgroundColor: "#FFFFFF",
-};
-
-const mainContainer = {
-  maxWidth: "600px",
-  backgroundColor: "#070707",
-  padding: "40px 12px 0 12px",
-};
-
 const logoContainer = {
   width: "min-content",
-};
-
-const divider = {
-  width: "68%",
-  height: "1px",
-  margin: "24px auto",
-};
-
-const heading = {
-  color: "#EFEFEF",
-  fontSize: "24px",
-  textAlign: "center" as const,
-};
-
-const greetingsSection = {
-  padding: "0 8px",
-};
-
-const greetingsImageContainer = {
-  margin: "24px 0",
-};
-
-const buttonContainer = {
-  width: "min-content",
-  marginTop: "8px",
-};
-
-const button = {
-  borderRadius: "4px",
-  backgroundColor: "#FFFFFF",
-  color: "#000000",
-  fontSize: "14px",
-  textAlign: "center" as const,
-  whiteSpace: "pre" as const,
-};
-
-const reasonsSection = {
-  marginTop: "24px",
-};
-
-const column = {
-  width: "100%",
-  maxWidth: "268px",
-  display: "inline-block",
-  verticalAlign: "top",
-  margin: "12px 8px",
-  textAlign: "left" as const,
 };
 
 const reasonTitle = {
@@ -188,47 +137,6 @@ const reasonTitle = {
 const reasonText = {
   fontSize: "15px",
   fontWeight: "500",
-};
-
-const presentText = {
-  display: "inline-block",
-  fontSize: "15px",
-  fontWeight: "500",
-};
-
-const greetingText = {
-  float: "left",
-};
-
-const highlightText = {
-  backgroundColor: "#E3FF2E",
-  float: "right",
-};
-
-const firstReason = {
-  backgroundColor: "#EFEFEF",
-  color: "#070707",
-  borderRadius: "16px",
-  padding: "12px",
-};
-
-const secondReason = {
-  backgroundColor: "#E3FF2E",
-  color: "#070707",
-  borderRadius: "16px",
-  padding: "12px",
-};
-
-const thirdReason = {
-  backgroundColor: "#C09DED",
-  color: "#070707",
-  borderRadius: "16px",
-  padding: "12px",
-};
-
-const link = {
-  color: "#C09DED",
-  textDecoration: "underlined",
 };
 
 export default HelloEmail;
