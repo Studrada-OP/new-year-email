@@ -76,7 +76,7 @@ const HelloEmail = () => {
                 <Section>
                   <Img
                     className="flex justify-center w-full"
-                    src="https://github.com/Studrada-OP/new-year-email/blob/main/static/rare-1.png?raw=true"
+                    src="https://github.com/Studrada-OP/new-year-email/blob/main/static/rare-3.png?raw=true"
                   />
                 </Section>
 
